@@ -1,8 +1,36 @@
-import React from "react";
-import repos from "../data/repos"
+import React, { useEffect, useState } from "react";
+// import repos from "../data/repos"
 import Repo from '../components/repo'
 
 const Repos = () => {
+    
+    const [repos, setRepos] = useState([])
+
+    useEffect(() => {
+
+        const data = sessionStorage.getItem("repos")
+        let myRepos
+
+        if(data){
+            myRepos = JSON.parse(data)
+            myRepos = myRepos.slice(1,12)
+            return setRepos(myRepos)
+        }
+        
+
+        async function fetchRepos(){
+            const response = await fetch("https://api.github.com/users/arizamoisesco/repos")
+            let myRepos = await response.json()
+        
+            sessionStorage.setItem("repos", JSON.stringify(myRepos))
+
+            setRepos(myRepos)
+        }
+
+        fetchRepos()
+        
+    }, [])
+
     return(
         <>
             <header className="text-center">

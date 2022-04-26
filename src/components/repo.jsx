@@ -1,5 +1,5 @@
 import React from 'react';
-import repos from '../data/repos'
+//import repos from '../data/repos'
 
 const Repo = (props) => {
     return(
