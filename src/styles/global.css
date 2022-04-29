@@ -7,3 +7,7 @@
 .btn{
     @apply bg-sky-500  text-white rounded border border-sky-700 hover:bg-sky-600 py-2 px-4 border-b-4;
 }
+
+.linkNav{
+    @apply pr-4;
+}
