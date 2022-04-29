@@ -48,7 +48,7 @@ const Repos = () => {
                         <p>Colaboración y contribución de código</p>
                     </div>
                 </header>
-                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+                <ul className="grid grid-cols-1 px-4 md:grid-cols-2 md:px-2 lg:grid-cols-3 gap-4 my-4">
                     {
                         repos.map((repo) => {
                             return <Repo repo = {repo} key = {repo.id} />
