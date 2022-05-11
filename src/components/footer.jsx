@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return(
-        <footer className='w-full h-auto mt-16 bg-slate-900 sm:bg-slate-900 dark:bg-slate-900 dark:text-white text-center font-bold grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 my-4'> 
-            
+        <footer className='w-full h-auto mx-auto mt-16 bg-slate-900 sm:bg-slate-900 dark:bg-slate-900 dark:text-white text-center font-bold grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 static bottom-0'> 
+
             <section className = "mt-5 items-center">
                 <a className="text-sm p-4 inline-block mr-4 bg-white rounded-full shadow-xl" href="https://twitter.com/arizamoisesco" target="_blank" rel='noopener noreferrer'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="text-black w-4 h-4">
@@ -16,7 +16,7 @@ const Footer = () => {
                         </svg>
                     </a>
             </section>
-            <section>
+            <section className = "items-center">
                 <p className="inline-block">Hecho con ❤️ en 🇨🇴</p> 
                 <p> 2022 </p> 
             </section>

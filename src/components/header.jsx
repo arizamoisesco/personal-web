@@ -4,7 +4,7 @@ import Form from './contact.form'
 
 const Header = () => {
     return(
-        <header className='bg-blue-100  dark:bg-slate-900 w-full'>
+        <header className='bg-blue-100  dark:bg-slate-900 w-full rounded-b-lg'>
             <div className='container mx-auto p-12 max-w-4xl'>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div className='flex-1'>
